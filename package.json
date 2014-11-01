@@ -1,0 +1,12 @@
+{
+  "name": "myact-stream-transform",
+  "version": "0.1.0",
+  "description": "A stream transformer for Myact providers to easily convert data into a Myact-compatible feed item",
+  "main": "index.js",
+  "author": {
+    "name": "Andrew Duthie",
+    "email": "andrew@andrewduthie.com",
+    "url": "http://www.andrewduthie.com/"
+  },
+  "license": "MIT"
+}
