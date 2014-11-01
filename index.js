@@ -1,9 +1,10 @@
 var Transform = require( 'stream' ).Transform;
 
-var MyactStreamTransform = module.exports = function( keyProperty ) {
+var MyactStreamTransform = module.exports = function( key ) {
     Transform.call( this, { objectMode: true });
 
-    this.keyProperty = keyProperty;
+    if ( 'undefined' === typeof key ) key = 'id';
+    this.keyProperty = key;
 };
 
 MyactStreamTransform.prototype = Object.create( Transform.prototype );
